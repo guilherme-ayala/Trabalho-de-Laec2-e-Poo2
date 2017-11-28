@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.page:not(:target){
+  display: none;
+}
+
+.page:target{
+  display: block;
+}
+
+header{  
+  background: #eee;
+  height: 100%;
+  left: -200px;
+  position: fixed;
+  transition: all ease-in-out .3s;
+  width: 200px;
+}
+
+header a{
+  border-bottom: solid 1px #DDD;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+header ul{
+ list-style: none;
+}
+
+#menu{
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+#menu > img{
+  padding-bottom: 20px;
+  width: 25px;
+}
+
+.opened{
+  margin-left: 200px;
+}
+
+main{
+  padding: 2rem;
+}
+
+main p{
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.lista{
+  padding-top:60px;
+}
+summary,input:focus{
+  outline:none;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   width:40%;
+   margin:0 auto;
+   position:relative;
+ }
+form legend{
+  width:100%;
+  border-bottom:solid 1px;
+  padding:0.25rem;
+  margin-bottom: 2rem;
+}
+form .Container-input{
+  display:flex;
+  flex-direction:column;
+}
+label{
+  line-height:2rem;
+}
+form [type="text"],[type="phone"],[type="number"],select{
+  padding:0.2rem;
+  padding-bottom:1rem;
+}
+form [type="button"]{
+  border:none;
+  padding:1rem;
+  position:relative;
+  width:100%;
+  top:1rem;
+}
+input,select{
+  outline:none;
+}
+.regi{
+  width:940px;
+  margin:0 auto;
+}
